@@ -7,3 +7,5 @@
 * praw.ini
 
 * main.py
+
+* .gitignore
