@@ -1,7 +1,5 @@
 # Reddit Bot Template
 
-<hr>
-
 ## Contents
 
 * README.md
