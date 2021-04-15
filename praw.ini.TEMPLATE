@@ -1,4 +1,4 @@
-[link]
+[user]
 user_agent=<Bot Name> v<Version Info> by u/<Your Reddit Username>
 username=<Bot Username>
 client_id=<Client ID from http://reddit.com/prefs/apps>
