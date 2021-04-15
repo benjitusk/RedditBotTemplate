@@ -2,7 +2,7 @@
 # ======== Imports ========
 import praw  # For Reddit
 import time  # For checking the inbox at a time interval
-reddit = praw.Reddit('link')
+reddit = praw.Reddit('user')
 print('Logged into Reddit.')
 
 # ======== Setup Paramaters ========
@@ -10,7 +10,7 @@ print('Logged into Reddit.')
 me = reddit.user.me()
 config = {
     "subreddit": reddit.subreddit('all'),  # Which subreddit to scan
-    "inbox scan freq": 10,  # Interval of seconds to check inbox. Disables feature if <= 0
+    "inbox scan freq": 0,  # Interval of seconds to check inbox. Disables feature if <= 0
     "scan": {
         "comments": True,
         "submissions": False
