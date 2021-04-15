@@ -13,7 +13,7 @@ config = {
     "inbox scan freq": 10,  # Interval of seconds to check inbox. Disables feature if <= 0
     "scan": {
         "comments": True,
-        "submissions": True
+        "submissions": False
     },
     "ignore automoderator": {
         "comments": True,
@@ -21,16 +21,16 @@ config = {
         "inbox": True
     },
     "ignore distinguished": {
-        "comments": True,
-        "submissions": True
+        "comments": False,
+        "submissions": False
     },
     "ignore self": {
         "comments": True,
         "submissions": True
     },
     "ignore stickied": {
-        "comments": True,
-        "submissions": True
+        "comments": False,
+        "submissions": False
     },
 }
 
@@ -52,6 +52,7 @@ def scan_inbox():
         processed_messages.append(message)
         if config["ignore automoderator"]["inbox"] and message.author.name == "AutoModerator":
             continue
+
     reddit.inbox.mark_read(processed_messages)
 
 
